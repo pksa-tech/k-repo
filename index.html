@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>For Yogita ♡</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#2a0a14;--wine:#5a1226;--blush:#f7c9d4;--cream:#fff4ea;--gold:#e8b4a0;--glow:rgba(247,201,212,.45);color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:radial-gradient(ellipse at 50% 0%,#5a1226 0%,#2a0a14 70%) fixed;color:var(--cream);font-family:'Cormorant Garamond',Georgia,serif;font-size:20px;line-height:1.75;overflow-x:hidden}
+body.lock{overflow:hidden;height:100%}
+.script{font-family:'Great Vibes','Snell Roundhand',cursive;font-weight:400;color:var(--blush);text-shadow:0 0 24px var(--glow)}
+#stars,#fx{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.star{position:absolute;width:3px;height:3px;border-radius:50%;background:#fff;box-shadow:0 0 6px 2px var(--glow);animation:tw 4s ease-in-out infinite}
+@keyframes tw{0%,100%{opacity:.15}50%{opacity:.95}}
+.fl{position:absolute;bottom:-40px;animation:rise linear forwards;opacity:0}
+@keyframes rise{0%{opacity:0;transform:translateY(0) rotate(0)}10%{opacity:.85}90%{opacity:.5}100%{opacity:0;transform:translateY(-110vh) translateX(var(--dx)) rotate(var(--r))}}
+.fall{position:absolute;top:-30px;width:14px;height:18px;background:linear-gradient(135deg,#f4a6ba,#b0304f);border-radius:80% 0 80% 0;animation:fall linear forwards;opacity:.8}
+@keyframes fall{to{transform:translateY(110vh) translateX(var(--dx)) rotate(540deg)}}
+.screen{position:fixed;inset:0;z-index:5;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:28px;background:radial-gradient(ellipse at 50% 30%,#4a0f21,#1d060d);transition:opacity 1.6s}
+.screen.gone{opacity:0;pointer-events:none}
+.fade{opacity:0;transform:translateY(12px);transition:opacity 2.4s,transform 2.4s}
+.fade.on{opacity:1;transform:none}
+#l1{font-size:clamp(1.5rem,6vw,2.2rem);font-style:italic;max-width:520px}
+#l2{font-size:clamp(1.6rem,6.4vw,2.4rem);max-width:520px;margin-top:24px}
+.btn{font:inherit;font-size:1.1rem;color:var(--cream);background:rgba(247,201,212,.12);border:1px solid var(--gold);border-radius:40px;padding:14px 30px;margin-top:34px;cursor:pointer;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:0 0 22px var(--glow);animation:pulse 3s ease-in-out infinite;touch-action:manipulation}
+@keyframes pulse{50%{box-shadow:0 0 38px rgba(247,201,212,.7)}}
+.env{position:relative;width:min(70vw,260px);aspect-ratio:1.5;margin:10px auto 0;cursor:pointer;filter:drop-shadow(0 0 22px var(--glow));animation:pulse 3s ease-in-out infinite}
+.env .bk,.env .ft{position:absolute;inset:0;border-radius:6px}
+.env .bk{background:#c9566f}
+.env .ft{background:linear-gradient(135deg,transparent 49.5%,#e58aa0 50%) left/50% 100% no-repeat,linear-gradient(225deg,transparent 49.5%,#e58aa0 50%) right/50% 100% no-repeat,linear-gradient(to top,#f2a1b5 0 55%,transparent 55%);z-index:3}
+.env .fp{position:absolute;left:0;right:0;top:0;height:55%;background:#b8405c;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform 1s,z-index 0s .5s;z-index:4}
+.env .ct{position:absolute;left:8%;right:8%;top:6%;bottom:8%;background:var(--cream);border-radius:4px;transition:transform 1s .6s;z-index:2}
+.env.open .fp{transform:rotateX(180deg);z-index:1}
+.env.open .ct{transform:translateY(-38%)}
+.env.open{animation:none}
+.env .heart{position:absolute;left:50%;top:48%;transform:translate(-50%,-50%);z-index:5;font-size:1.4rem;color:#ffe4ea;transition:opacity .4s}
+.env.open .heart{opacity:0}
+main{position:relative;z-index:2;opacity:0;transition:opacity 2s}
+main.on{opacity:1}
+section{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:48px 22px}
+h1{font-size:clamp(3rem,16vw,5.5rem);line-height:1.15}
+.sub{max-width:480px;margin-top:18px;font-size:1.25rem;font-style:italic}
+.hb{font-size:2.6rem;color:#e8587a;margin-top:26px;animation:beat 1.4s ease-in-out infinite;filter:drop-shadow(0 0 14px rgba(232,88,122,.7))}
+@keyframes beat{0%,40%,100%{transform:scale(1)}15%{transform:scale(1.22)}30%{transform:scale(1.08)}}
+.card{background:rgba(255,244,234,.07);border:1px solid rgba(232,180,160,.45);border-radius:20px;padding:30px 24px;max-width:600px;width:100%;text-align:left;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 10px 40px rgba(0,0,0,.35),inset 0 0 30px rgba(247,201,212,.05)}
+.card p{margin-bottom:1.1em;font-size:1.12rem}
+.card p.sig{font-size:1.2rem}
+.rv{opacity:0;transform:translateY(18px);transition:opacity 1.6s,transform 1.6s}
+.rv.on{opacity:1;transform:none}
+#letter{justify-content:flex-start;min-height:0;padding-top:70px}
+#letter h2,#rem h2{font-size:2.3rem;margin-bottom:18px}
+#hugmsg{margin-top:22px;max-width:440px;font-size:1.25rem;font-style:italic;min-height:3.5em}
+.q{max-width:480px;font-size:1.3rem}
+#last{padding-bottom:80px}
+#fin{background:radial-gradient(ellipse at 50% 40%,#7a2038,#3a0c1a 75%);position:relative;overflow:hidden}
+#fin h2{font-size:clamp(2.4rem,11vw,3.8rem);margin-bottom:18px}
+#fin .big{font-size:clamp(1.9rem,8vw,2.8rem);margin-top:30px;color:var(--gold);text-shadow:0 0 22px rgba(232,180,160,.6)}
+#fin .sub{font-size:1.3rem}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01s!important}html{scroll-behavior:auto}.fade,.rv{transform:none}}
+</style>
+</head>
+<body class="lock">
+<div id="stars"></div><div id="fx"></div>
+
+<div class="screen" id="intro">
+  <p id="l1" class="fade">Some people make life beautiful just by existing...</p>
+  <p id="l2" class="fade script">And somehow, I got lucky enough to love one of them. ♡</p>
+  <button class="btn fade" id="openBtn">Open your surprise 💌</button>
+  <div class="env" id="env" style="display:none"><div class="bk"></div><div class="ct"></div><div class="fp"></div><div class="ft"></div><span class="heart">♥</span></div>
+</div>
+
+<main id="main">
+  <section id="hero">
+    <h1 class="script rv">Happy Birthday, Yogita♡</h1>
+    <p class="sub rv">Today, the world celebrates your existence. And I celebrate the beautiful fact that you are a part of my life.</p>
+    <div class="hb">♥</div>
+    <button class="btn" id="readBtn">Read my heart</button>
+  </section>
+
+  <section id="letter" style="display:none">
+    <h2 class="script">For you</h2>
+    <div class="card">
+      <p class="rv">Happy Birthday, my love. ❤️‍🩹🎂</p>
+      <p class="rv">I wish I could put into words what you truly mean to me, but somehow, every time I try, words feel too small for what my heart holds for you.</p>
+      <p class="rv">You came into my life and became someone I can't imagine my days without. Somewhere between our conversations, our little moments, our smiles, and even the difficult days, you became more than just my girlfriend. You became a part of my happiness, a person my heart looks for, and someone whose smile can make an ordinary day feel special.</p>
+      <p class="rv">And if there's one thing I want you to know today, it's this: you don't have to do anything extraordinary to deserve my love. You don't have to be perfect, pretend to be strong every day, or hide the parts of yourself that you think are difficult to understand. You deserve to be loved simply because you are you. The happy you, the tired you, the overthinking you, the quiet you, and every version of you that the world doesn't always get to see.</p>
+      <p class="rv">I know I won't always have the perfect words. I might not always know how to fix everything that's hurting you, and there may be days when life feels heavier than either of us expects. But I hope that, even on those days, you never question how much your happiness matters to me. I want to see you grow, achieve everything you've dreamed of, laugh until your stomach hurts, discover beautiful things about yourself, and become the person you've always wanted to be.</p>
+      <p class="rv">And selfishly, I hope I get to witness so many of those moments. I hope I get to celebrate your little victories, listen to your random stories, annoy you with my nonsense, and remind you how beautiful you are when you forget it yourself. I hope we collect memories that we'll smile about years from now.</p>
+      <p class="rv">If I could wish one thing for you beyond all the birthday wishes, it would be that life treats your heart gently. That you never lose the beautiful parts of yourself while chasing your dreams. That you find peace when your mind feels crowded, strength when things get difficult, and countless reasons to smile when you least expect them.</p>
+      <p class="rv">Thank you for existing. Thank you for being the person you are. And thank you for giving me the chance to love you in this lifetime. Maybe I can't promise that every day will be perfect, but I can promise that what you mean to me is not something I take lightly.</p>
+      <p class="rv">Today is your birthday, but honestly, I'm grateful for the day you were born because somewhere in this enormous world, a person came into existence who would eventually become so incredibly special to me.</p>
+      <p class="rv">I hope you receive the kind of happiness that stays, the kind of love that feels safe, and the kind of life that makes you proud of the person you've become.</p>
+      <p class="rv sig">Happy Birthday, meri jaan. ❤️</p>
+      <p class="rv">Keep smiling, keep dreaming, and never make yourself smaller just to fit into this world. You deserve to take up space, to shine in your own way, and to experience every beautiful thing life has waiting for you.</p>
+      <p class="rv">And no matter where life takes you, I will always wish for your happiness, your peace, and your success with all my heart.</p>
+      <p class="rv sig">Have a great life ahead. ✨❤️</p>
+    </div>
+  </section>
+
+  <section id="hug" style="display:none">
+    <button class="btn" id="hugBtn">Tap if you need a hug ♡</button>
+    <p id="hugmsg" class="script" style="font-size:1.9rem"></p>
+  </section>
+
+  <section id="rem" style="display:none">
+    <h2 class="script rv">A little reminder for you</h2>
+    <p class="q rv">On your happiest days, celebrate yourself. On your hardest days, remember that you don't have to be perfect to be loved.</p>
+    <div class="hb rv">♥</div>
+  </section>
+
+  <section id="last" style="display:none">
+    <p class="script rv" style="font-size:2rem">One last thing, my love...</p>
+    <div class="env" id="env2" style="margin-top:26px"><div class="bk"></div><div class="ct"></div><div class="fp"></div><div class="ft"></div><span class="heart">♥</span></div>
+    <p class="sub" id="lastmsg" style="opacity:0;transition:opacity 2.4s">Whatever life brings your way, I hope you never forget how precious you are. I will always wish for your happiness, your peace, and the fulfilment of every dream you carry.</p>
+  </section>
+
+  <section id="fin" style="display:none">
+    <h2 class="script rv">Happy Birthday, My Love ♡</h2>
+    <p class="sub rv">You deserve every beautiful thing this life has to offer.</p>
+    <p class="big script rv">Have a great life ahead ✨</p>
+  </section>
+</main>
+
+<script>
+(function(){
+var calm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+var $=function(i){return document.getElementById(i)};
+var fx=$('fx'),stars=$('stars'),spawning=true,rate=1600;
+for(var i=0;i<45;i++){var s=document.createElement('div');s.className='star';s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';s.style.animationDelay=Math.random()*4+'s';s.style.transform='scale('+(.5+Math.random())+')';stars.appendChild(s)}
+function heart(n,burst){
+  var el=document.createElement('div');el.className='fl';
+  el.textContent=['♥','♡','♥','✦'][Math.floor(Math.random()*4)];
+  el.style.left=Math.random()*100+'%';
+  el.style.fontSize=(12+Math.random()*20)+'px';
+  el.style.color=['#f7c9d4','#e8587a','#e8b4a0','#ffd9e2'][Math.floor(Math.random()*4)];
+  el.style.setProperty('--dx',(Math.random()*80-40)+'px');
+  el.style.setProperty('--r',(Math.random()*60-30)+'deg');
+  var d=(burst?5:9)+Math.random()*6;
+  el.style.animationDuration=d+'s';
+  fx.appendChild(el);setTimeout(function(){el.remove()},d*1000+200)}
+function petal(){
+  var p=document.createElement('div');p.className='fall';
+  p.style.left=Math.random()*100+'%';
+  p.style.setProperty('--dx',(Math.random()*120-60)+'px');
+  var d=9+Math.random()*7;p.style.animationDuration=d+'s';
+  fx.appendChild(p);setTimeout(function(){p.remove()},d*1000+200)}
+function burst(n){if(calm)n=Math.min(n,4);for(var i=0;i<n;i++)setTimeout(function(){heart(0,1)},i*90)}
+setInterval(function(){if(!spawning||document.hidden)return;heart();if(Math.random()<.5)petal()},calm?3500:rate);
+function on(el,t){setTimeout(function(){el.classList.add('on')},t||0)}
+
+/* opening */
+on($('l1'),600);on($('l2'),600+2400+2000);on(document.querySelector('#intro .btn'),600+2400+2000+2800);
+$('openBtn').onclick=function(){
+  $('l1').style.display=$('l2').style.display=this.style.display='none';
+  var e=$('env');e.style.display='block';
+  setTimeout(function(){e.classList.add('open');burst(26)},300);
+  setTimeout(function(){
+    $('intro').classList.add('gone');$('main').classList.add('on');document.body.classList.remove('lock');
+    reveal(document.querySelectorAll('#hero .rv'),500,1600);
+    setTimeout(function(){$('intro').style.display='none'},1800)},2400)};
+
+function reveal(list,start,gap){Array.prototype.forEach.call(list,function(el,i){on(el,start+i*gap)})}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.3});
+function watch(sel){document.querySelectorAll(sel).forEach(function(el){io.observe(el)})}
+function showSec(id){var s=$(id);s.style.display='flex';return s}
+
+$('readBtn').onclick=function(){
+  this.style.display='none';
+  var l=showSec('letter');l.style.display='flex';
+  watch('#letter .rv');
+  setTimeout(function(){l.scrollIntoView({behavior:calm?'auto':'smooth'})},100);
+  ['hug','rem','last'].forEach(showSec);watch('#rem .rv,#last .rv')};
+
+$('hugBtn').onclick=function(){
+  burst(22);
+  var m=$('hugmsg');m.style.opacity=0;m.textContent='Imagine me holding you close and reminding you that you are loved.';
+  m.style.transition='opacity 2s';setTimeout(function(){m.style.opacity=1},50)};
+
+var done=false;
+$('env2').onclick=function(){
+  if(done)return;done=true;this.classList.add('open');burst(20);
+  setTimeout(function(){$('lastmsg').style.opacity=1},900);
+  setTimeout(function(){
+    var f=showSec('fin');watch('#fin .rv');
+    Array.prototype.forEach.call(f.querySelectorAll('.rv'),function(el,i){on(el,900+i*2200)});
+    f.scrollIntoView({behavior:calm?'auto':'smooth'});
+    for(var i=0;i<12;i++)setTimeout(petal,i*400);
+    /* final fade-out: gentle slowing of hearts */
+    rate=4500;
+    setTimeout(function(){spawning=false;fx.style.transition='opacity 6s';fx.style.opacity=0},22000)},5500)};
+})();
+</script>
+</body>
+</html>
